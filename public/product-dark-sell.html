@@ -269,7 +269,7 @@
 							</li>
 							<li><a href="activity-dark.html">Activity</a></li>
 							<li><a href="blog-dark.html">Community</a></li>
-							<li class="menu-item-has-children">
+							<!-- <li class="menu-item-has-children">
 								<a href="#">Pages<img src="svg/down.svg" alt="" class="fn__svg"></a>
 								<div class="anor_fn_megamenu">
 									<div class="container">
@@ -326,7 +326,7 @@
 										</div>
 									</div>
 								</div>
-							</li>
+							</li> -->
 							<li><a href="add-item-dark.html">Create</a></li>
 						</ul>
 					</div>
@@ -386,7 +386,7 @@
 					</li>
 					<li><a href="activity-dark.html">Activity</a></li>
 					<li><a href="blog-dark.html">Community</a></li>
-					<li class="menu-item-has-children">
+					<!-- <li class="menu-item-has-children">
 						<a href="#">Pages<img src="svg/down.svg" alt="" class="fn__svg"></a>
 						<ul class="sub-menu">
 							<li><a href="activity-dark.html">Activity</a></li>
@@ -423,7 +423,7 @@
 							<li><a href="traders-dark.html">Traders</a></li>
 							<li><a href="404-dark.html">404 Page</a></li>
 						</ul>
-					</li>
+					</li> -->
 					<li><a href="add-item-dark.html">Create</a></li>
 				</ul>
 			</div>
@@ -546,9 +546,33 @@
 								</div>
 							</div>
 							<div class="price_bottom">
-								<a  class="anor_fn_button buy;" style="margin-left:50%;
-								-ms-transform:translate(-50%, 0%); transform:translate(-50%, 0%);" onclick="sendTx()">Buy Now</a>
-								<!-- <a href="#" class="anor_fn_button offer">Make Offer</a> -->
+								<a  class="anor_fn_button buy;"  onclick="sendTx()">Sell Now</a>
+								<a  class="anor_fn_button buy" style="position:relative;left:50px;" onclick="sendTx()">Qr Code</a>
+								<!-- <p class="fn_desc2" style="text-align:right">Redeem Count: 0</p> -->
+								<p id="redeem"style="position:relative;left:35px;top:8px">Redeem Count: 0</p>
+								<div id="qrcode" 
+								style="position: absolute;
+								position: fixed;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background: rgba(255, 255, 255, 0.6);
+								z-index: 9999;
+								display: none;
+								">
+									<img 
+									style="position: absolute;
+									margin: auto;
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									width: 400px;
+									height: 400px;
+									display: block;"
+									id="image" width="100%" height="100%" src="./img/QR-code.jpg">
+								</div>
 							</div>
 						</div>
 						
@@ -1430,6 +1454,7 @@
 		document.getElementById("wallet").innerHTML = account;
 	}
 	async function sendTx(){
+		
 		if(!ethereum.selectedAddress) ConnectWallet()
 		const transactionParameters = {
 			nonce: '0x00', // ignored by MetaMask
@@ -1445,7 +1470,12 @@
 		method: 'eth_sendTransaction',
 		params: [transactionParameters],
 		});
+		$('#redeem').text("Redeem Count: 1")
+		$("#qrcode").fadeIn("slow");
 	}
+	$("#qrcode").click(function() {
+		$("#qrcode").fadeOut("slow");
+	})
 </script>
 <!-- !Scripts -->
 
