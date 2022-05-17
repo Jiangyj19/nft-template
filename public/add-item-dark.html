@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" data-skin="dark"> <!--<![endif]-->
+  
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Opensales">
+<meta name="author" content="Match">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Opensales | Add New Item</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- !Google Fonts -->
+
+<!-- Styles -->
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/hamburger.css" />
+<link type="text/css" rel="stylesheet" href="css/tippy.css" />
+<link type="text/css" rel="stylesheet" href="css/select2.css" />
+<link type="text/css" rel="stylesheet" href="css/fontello.css" />
+<link type="text/css" rel="stylesheet" href="css/flickity.css" />
+<link type="text/css" rel="stylesheet" href="css/dark.css?ver=8" />
+<link type="text/css" rel="stylesheet" href="css/style.css?ver=8" />
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<!-- !Styles -->
+
+</head>
+
+<body>
+
+<!-- Main -->
+<div class="anor_fn_main">
+
+	<!-- Share Modalbox -->
+	<div class="anor_fn_modal share_box">
+		<div class="modal_in">
+			<div class="modal_closer"><img src="svg/cancel.svg" alt="" class="fn__svg"></div>
+			<div class="modal_title">Share</div>
+			<div class="modal_content">
+				<div class="share_title"></div>
+				<div class="share_list">
+					<ul>
+						<li><a class="facebook" href="#" target="_blank"><i class="fn-icon-facebook"></i></a></li>
+						<li><a class="twitter" href="#" target="_blank"><i class="fn-icon-twitter"></i></a></li>
+						<li><a class="pinterest" href="#" target="_blank"><i class="fn-icon-pinterest"></i></a></li>
+<!--						<li><a class="linkedin" href="#" target="_blank"><i class="fn-icon-linkedin"></i></a></li>-->
+<!--						<li><a class="email" href="#" target="_blank"><i class="fn-icon-email"></i></a></li>-->
+						<li><a class="vk" href="#" target="_blank"><i class="fn-icon-vkontakte"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- !Share Modalbox -->
+
+	<!-- Report Modalbox -->
+	<div class="anor_fn_modal report_box">
+		<div class="modal_in">
+			<div class="modal_closer"><img src="svg/cancel.svg" alt="" class="fn__svg"></div>
+			<div class="modal_title">Report</div>
+			<div class="modal_content">
+				<h3 class="fn_title"></h3>
+				<p class="fn_desc">I think this item is...</p>
+				<form>
+					<select>
+						<option disabled>Select a reason</option>
+						<option value="fake">Fake collection or possible scam</option>
+						<option value="explicit">Explicit and sensitive content</option>
+						<option value="spam">Spam</option>
+						<option value="stolen">Might be stolen</option>
+						<option value="other">Other</option>
+					</select>
+					<div class="clearfix"></div>
+					<input type="submit" value="Report" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- !Report Modalbox -->
+	
+	<!-- Follower Modalbox -->
+	<div class="anor_fn_modal follower_box">
+		<div class="modal_in">
+			<div class="modal_closer"><img src="svg/cancel.svg" alt="" class="fn__svg"></div>
+			<div class="modal_title"></div>
+			<div class="modal_content">
+				<ul class="list">
+					<!-- You have to insert here items (followers or followings) via ajax -->
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/1.jpg" alt="">
+									<span class="icon">
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">mrCopper</a></h3>
+									<p class="fn_desc">10,033 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/2.jpg" alt="">
+									<span class="icon">
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">OrcaVault</a></h3>
+									<p class="fn_desc">5,946 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/3.jpg" alt="">
+									<span class="icon">
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">baghodler</a></h3>
+									<p class="fn_desc">930 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/4.jpg" alt="">
+									<span class="icon">
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">Cochang</a></h3>
+									<p class="fn_desc">10,033 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/5.jpg" alt="">
+									<span class="icon">
+
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">sadplatinum</a></h3>
+									<p class="fn_desc">5,163 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="mini_item">
+							<div class="mi_left">
+								<div class="author_img">
+									<a href="author-collected-dark.html" class="full_link"></a>
+									<img src="img/author/6.jpg" alt="">
+									<span class="icon">
+										<img src="svg/checked.svg" alt="" class="fn__svg">
+									</span>
+								</div>
+								<div class="author_info">
+									<h3 class="fn_title"><a href="author-collected-dark.html">moonbase.eth</a></h3>
+									<p class="fn_desc">1,320 Followers</p>
+								</div>
+							</div>
+							<div class="mi_right">
+								<a href="#" class="anor_fn_follow" data-followed="Followed" data-id="">
+									<span class="plus"></span>
+									<span class="icon"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+									<span class="text">Follow</span>
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- !Follower Modalbox -->
+	
+	<!-- Header -->
+	<header class="anor_fn_header">
+		<div class="container">
+			<div class="header_in">
+				
+				<!-- Left Part -->
+				<div class="header_left">
+					<div class="fn_logo">
+						<a href="index-dark.html"><img src="img/logo-dark.png" alt=""></a>
+					</div>
+					<div class="nav_list">
+						<ul class="main_menu">
+							<li class="menu-item-has-children">
+								<a href="discover-collections-dark.html">Discover<img src="svg/down.svg" alt="" class="fn__svg"></a>
+								<ul class="sub-menu">
+									<li><a href="popular-collections-dark.html">Popular</a></li>
+									<li><a href="featured-collections-dark.html">Featured</a></li>
+									<li><a href="discover-items-dark.html">New Items</a></li>
+									<li><a href="discover-collections-dark.html">Collections</a></li>
+								</ul>
+							</li>
+							<li><a href="activity-dark.html">Activity</a></li>
+							<li><a href="blog-dark.html">Community</a></li>
+							<!-- <li class="menu-item-has-children">
+								<a href="#">Pages<img src="svg/down.svg" alt="" class="fn__svg"></a>
+								<div class="anor_fn_megamenu">
+									<div class="container">
+										<div class="cols">
+											<div class="col_item">
+												<ul>
+													<li><a href="activity-dark.html">Activity</a></li>
+													<li><a class="active" href="add-item-dark.html">Add Item</a></li>
+													<li><a href="artists-dark.html">Artists</a></li>
+													<li><a href="auctions-dark.html">Auctions</a></li>
+													<li><a href="author-activity-dark.html">Author Activity</a></li>
+													<li><a href="author-added-collections-dark.html">Author Added Collections</a></li>
+													<li><a href="author-added-items-dark.html">Author Added Items</a></li>
+													<li><a href="author-collected-dark.html">Author Collected</a></li>
+													<li><a href="author-liked-collections-dark.html">Author Liked Collections</a></li>
+												</ul>
+											</div>
+											<div class="col_item">
+												<ul>
+													<li><a href="author-liked-items-dark.html">Author Liked Items</a></li>
+													<li><a href="author-offers-made-dark.html">Author Offers Made</a></li>
+													<li><a href="author-offers-received-dark.html">Author Offers Received</a></li>
+													<li><a href="blog-dark.html">Blog</a></li>
+													<li><a href="blog-single-dark.html">Blog Single</a></li>
+													<li><a href="categories-dark.html">Categories</a></li>
+													<li><a href="category-single-dark.html">Category Single</a></li>
+													<li><a href="collection-single-activity-dark.html">Collection Single Activity</a></li>
+												</ul>
+											</div>
+											<div class="col_item">
+												<ul>
+													<li><a href="collection-single-items-dark.html">Collection Single Items</a></li>
+													<li><a href="contact-dark.html">Contact</a></li>
+													<li><a href="discover-collections-dark.html">Discover Collections</a></li>
+													<li><a href="discover-items-dark.html">Discover Items</a></li>
+													<li><a href="featured-collections-dark.html">Featured Collections</a></li>
+													<li><a href="index-dark.html">Home</a></li>
+													<li><a href="popular-collections-dark.html">Popular Collections</a></li>
+													<li><a href="product-dark.html">Product</a></li>
+												</ul>
+											</div>
+											<div class="col_item">
+												<ul>
+													<li><a href="rankings-dark.html">Rankings</a></li>
+													<li><a href="search-result-collections-dark.html">Search Result Collections</a></li>
+													<li><a href="search-result-items-dark.html">Search Result Items</a></li>
+													<li><a href="selling-dark.html">Selling</a></li>
+													<li><a href="sign-in-dark.html">Sign In</a></li>
+													<li><a href="sign-up-dark.html">Sign Up</a></li>
+													<li><a href="traders-dark.html">Traders</a></li>
+													<li><a href="404-dark.html">404 Page</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li> -->
+							<li><a href="add-item-dark.html">Create</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- !Left Part -->
+				
+				<!-- Right Part -->
+				<div class="header_right">
+					<div class="fn_search">
+						<input type="text" name="s" placeholder="Search NFT" />
+						<input type="submit" value="" />
+						<img src="svg/search.svg" alt="" class="fn__svg">
+					</div>
+					<div class="fn_signin">
+						<a id="wallet" class="anor_fn_button small"  onclick="ConnectWallet()"
+						style="text-overflow:ellipsis;text-overflow:ellipsis;max-width:230px">Connect Wallet</a>
+					</div>
+					<a href="author-collected-dark.html">
+						<img src="./icon/Profile.png" alt="" class="fn_svg" style="margin-left:10px;
+						width:50px; cursor:pointer">
+					</a>
+				</div>
+				<!-- !Right Part -->
+				
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+	
+	
+	<!-- Mobile Menu -->
+	<div class="anor_fn_mobile_menu">
+		<div class="mobile_menu_inner">
+			<div class="mobile_in">
+				<div class="logo">
+					<a href="index-dark.html"><img src="img/mobile-logo-dark.png" alt="" /></a>
+				</div>
+				<div class="trigger">
+					<div class="hamburger hamburger--slider">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown">
+			<div class="dropdown_inner">
+				<ul class="vert_menu">
+					<li class="menu-item-has-children">
+						<a href="discover-collections-dark.html">Discover<img src="svg/down.svg" alt="" class="fn__svg"></a>
+						<ul class="sub-menu">
+							<li><a href="popular-collections-dark.html">Popular</a></li>
+							<li><a href="featured-collections-dark.html">Featured</a></li>
+							<li><a href="discover-items-dark.html">New Items</a></li>
+							<li><a href="discover-collections-dark.html">Collections</a></li>
+						</ul>
+					</li>
+					<li><a href="activity-dark.html">Activity</a></li>
+					<li><a href="blog-dark.html">Community</a></li>
+					<li class="menu-item-has-children">
+						<a href="#">Pages<img src="svg/down.svg" alt="" class="fn__svg"></a>
+						<ul class="sub-menu">
+							<li><a href="activity-dark.html">Activity</a></li>
+							<li><a href="add-item-dark.html">Add Item</a></li>
+							<li><a href="artists-dark.html">Artists</a></li>
+							<li><a href="auctions-dark.html">Auctions</a></li>
+							<li><a href="author-activity-dark.html">Author Activity</a></li>
+							<li><a href="author-added-collections-dark.html">Author Added Collections</a></li>
+							<li><a href="author-added-items-dark.html">Author Added Items</a></li>
+							<li><a href="author-collected-dark.html">Author Collected</a></li>
+							<li><a href="author-liked-collections-dark.html">Author Liked Collections</a></li>
+							<li><a href="author-liked-items-dark.html">Author Liked Items</a></li>
+							<li><a href="author-offers-made-dark.html">Author Offers Made</a></li>
+							<li><a href="author-offers-received-dark.html">Author Offers Received</a></li>
+							<li><a href="blog-dark.html">Blog</a></li>
+							<li><a href="blog-single-dark.html">Blog Single</a></li>
+							<li><a href="categories-dark.html">Categories</a></li>
+							<li><a href="category-single-dark.html">Category Single</a></li>
+							<li><a href="collection-single-activity-dark.html">Collection Single Activity</a></li>
+							<li><a href="collection-single-items-dark.html">Collection Single Items</a></li>
+							<li><a href="contact-dark.html">Contact</a></li>
+							<li><a href="discover-collections-dark.html">Discover Collections</a></li>
+							<li><a href="discover-items-dark.html">Discover Items</a></li>
+							<li><a href="featured-collections-dark.html">Featured Collections</a></li>
+							<li><a href="index-dark.html">Home</a></li>
+							<li><a href="popular-collections-dark.html">Popular Collections</a></li>
+							<li><a href="product-dark.html">Product</a></li>
+							<li><a href="rankings-dark.html">Rankings</a></li>
+							<li><a href="search-result-collections-dark.html">Search Result Collections</a></li>
+							<li><a href="search-result-items-dark.html">Search Result Items</a></li>
+							<li><a href="selling-dark.html">Selling</a></li>
+							<li><a href="sign-in-dark.html">Sign In</a></li>
+							<li><a href="sign-up-dark.html">Sign Up</a></li>
+							<li><a href="traders-dark.html">Traders</a></li>
+							<li><a href="404-dark.html">404 Page</a></li>
+						</ul>
+					</li>
+					<li><a href="add-item-dark.html">Create</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- !Mobile Menu -->
+	
+	
+	<!----------- Content ----------->
+	
+	<div class="anor_fn_add_item_page">
+		<div class="container small">
+			
+			<div class="anor_fn_add_item">
+				
+				<!-- Preview -->
+				<div class="preview_part">
+					<div class="top_title">
+						<h3 class="fn_title">Preview</h3>
+					</div>
+					<div class="fn__single_item">
+						<div class="img_holder">
+							<a href="product-dark.html" class="full_link"></a>
+							<a href="#" class="anor_fn_like" data-id="" data-title="Item Title">
+								<img src="svg/like.svg" alt="" class="fn__svg">
+							</a>
+							<img src="img/product/1.jpg" id="upload" alt="">
+							<div class="action_box">
+								<a class="action_btn" href="#">
+									<span></span>
+								</a>
+								<div class="action_popup">
+									<ul>
+										<li><h4>2 Days Left</h4></li>
+										<li><a class="anor_fn_place_item" href="product-dark.html">Place a bid</a></li>
+										<li><a class="anor_fn_share_item" data-title="Item Title" href="#">Share</a></li>
+										<li><a class="anor_fn_report_item" data-title="Item Title" href="#">Report</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="title_holder">
+							<h3 class="fn_title" id="item_title_show"><a href="product-dark.html">Item Title</a></h3>
+							<p><span id="price_show">0.01 MATIC</span></p>
+						</div>
+					</div>
+				</div>
+				<!-- !Preview -->
+				
+				
+				
+				<!-- Fields -->
+				<div class="field_part">
+					<div class="top_title">
+						<h3 class="fn_title">Add New Item</h3>
+					</div>
+					<div class="fields_content">
+						<div class="anor_fn_upload_media">
+							<!-- <img src="https://frenify.net/envato/frenify/html/anor/1/img/author/1.jpg"/> -->
+							<input onchange="readURL(this);" type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, -dark.png, .gif, .webp, .mp4, .mp3" >
+							<label for="image_uploads">
+								<span class="desc">PNG, GIF, WEBP, MP4 or MP3. <br />Max: 100mb</span>
+								<span class="anor_fn_button">Select a File</span>
+							</label>
+						</div>
+						<ul class="fields">
+							<li class="field">
+								<div class="field_item">
+									<label for="item_title" class="label">Title</label>
+									<input id="item_title" type="text" placeholder="e.g. “Opensales Art”" />
+								</div>
+							</li>
+							<li class="field col8">
+								<div class="field_item">
+									<label for="item_price" class="label">Price in Crypto</label>
+									<input type="text" id="CRYPTO_Price" placeholder="0.01 MATIC">
+									<p class="fn_desc">Service fee: 2.5%<br />You will receive : 0.00 MATIC (HK$0.00)</p>
+									<ul class="filters">
+										<li class="filter">
+											<div class="filter_item">
+												<label class="checkbox">Dutch auction
+													<input type="checkbox">
+													<span class="checkmark"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+												</label>
+											</div>
+										</li>
+										<li class="filter">
+											<div class="filter_item">
+												<label class="checkbox">Reverse Dutch auction
+													<input type="checkbox">
+													<span class="checkmark"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+												</label>
+											</div>
+										</li>
+										<li class="filter">
+											<div class="filter_item">
+												<label class="checkbox">Raffle System
+													<input type="checkbox">
+													<span class="checkmark"><img src="svg/checked.svg" alt="" class="fn__svg"></span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="field col4 start">
+								<div class="field_item dd_filter">
+									<label class="label">Price in HKD</label>
+									<input type="text" id="HKD_Price">
+									<!-- <div class="input_wrapper">
+										<input readonly type="text" placeholder="MATIC" class="filter_list" autocomplete="off">
+										<img src="svg/down.svg" alt="" class="fn__svg">
+									</div> -->
+									<!-- <div class="input_dd_list">
+										<div data-id="*"><a href="#">All Currencies</a></div>
+										<div data-id="1"><a href="#">ETH</a></div>
+										<div data-id="2"><a href="#">LTC</a></div>
+										<div data-id="3"><a href="#">ADA</a></div>
+										<div data-id="4"><a href="#">DOT</a></div>
+										<div data-id="5"><a href="#">BCH</a></div>
+										<div data-id="6"><a href="#">XLM</a></div>
+									</div> -->
+								</div>
+							</li>
+							<li class="field col8">
+								<div class="field_item">
+									<label for="item_royalties" class="label">Royalties</label>
+									<input type="text" id="item_royalties" placeholder="Suggested: 0% - 20%, Max: 60%">
+								</div>
+							</li>
+							<li class="field col4">
+								<div class="field_item">
+									<label for="item_size" class="label">Total Supply</label>
+									<input type="text" id="item_size">
+								</div>
+							</li>
+							<!-- <li class="field col8">
+								<div class="field_item dd_filter">
+									<label class="label">Choose Collection</label>
+									<div class="input_wrapper">
+										<input readonly type="text" placeholder="Choose a Colllection" class="filter_list" autocomplete="off">
+										<img src="svg/down.svg" alt="" class="fn__svg">
+									</div>
+									<div class="input_dd_list">
+										<div data-id="1"><a href="#">MekaVerse Robots</a></div>
+										<div data-id="2"><a href="#">Fidenza Art</a></div>
+										<div data-id="3"><a href="#">Parallel Alpha</a></div>
+									</div>
+								</div>
+							</li> -->
+							<!-- <li class="field col4">
+								<div class="field_item end">
+									<a href="#" class="anor_fn_add_btn">
+										<span class="icon"></span>
+										<span class="text">New Collection</span>
+									</a>
+								</div>
+							</li> -->
+							<li class="field">
+								<div class="field_item">
+									<label for="item_desc" class="label">Description <span>(Optional)</span></label>
+									<textarea id="item_desc" placeholder="e.g. “Opensales Art”"></textarea>
+								</div>
+							</li>
+							<li class="field">
+								<div class="field_item">
+									<div class="links">
+										<a href="#" class="anor_fn_button small add">Add Item</a>
+										<a href="#" class="cancel">Cancel</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- !Fields -->
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	<!----------- !Content ----------->
+	
+	
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="anor_fn_footer">
+			
+			<!-- Footer Top -->
+			<div class="footer_top">
+				<div class="container">
+					<div class="ft_in">
+					
+						<div class="ft_left">
+							<div class="ft_left_in">
+								<div class="logo">
+									<a href="index-dark.html"><img src="img/logo-dark.png" alt=""></a>
+								</div>
+								<div class="desc">
+									<p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="ft_right">
+							<div class="title">
+								<h3 class="fn_title">Useful Links</h3>
+							</div>
+							<div class="link_list">
+								<ul>
+									<li><a href="#">Help Center</a></li>
+									<li><a href="#">Platform Status</a></li>
+									<li><a href="#">About Company</a></li>
+									<li><a href="rankings-dark.html">Rankings</a></li>
+									<li><a href="#">Taxes</a></li>
+									<li><a href="blog-dark.html">Blog / News</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="activity-dark.html">Activity</a></li>
+									<li><a href="#">Partners</a></li>
+									<li><a href="#">Docs</a></li>
+									<li><a href="#">Ventures</a></li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- !Footer Top -->
+			
+			
+			<!-- Footer Bottom -->
+			<div class="footer_bottom">
+				<div class="container">
+					<div class="fb_in">
+						
+						<div class="fb_left">
+							<ul>
+								<li>
+									<p>Copyright © 2022.  Designed by <a href="https://themeforest.net/user/Match/portfolio" target="_blank">Match</a>.</p>
+								</li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms of Service</a></li>
+							</ul>
+						</div>
+						
+						<div class="fb_right">
+							<div class="social_list">
+								<ul>
+									<li><a href="#"><i class="fn-icon-twitter"></i></a></li>
+									<li><a href="#"><i class="fn-icon-facebook"></i></a></li>
+									<li><a href="#"><i class="fn-icon-instagram"></i></a></li>
+									<li><a href="#"><i class="fn-icon-pinterest"></i></a></li>
+									<li><a href="#"><i class="fn-icon-behance"></i></a></li>
+								</ul>
+							</div>
+							<a href="#" class="totop"></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- !Footer Bottom -->
+			
+		</div>
+	</footer>
+	<!-- !Footer -->
+	 
+	 
+	 <!-- Magic Cursor -->
+	<div class="Match-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"></span></div>
+	<div class="Match-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="yes"><span class="fn-cursor"><span class="fn-left"></span><span class="fn-right"></span></span></div>
+	 <!-- !Magic Cursor -->
+
+</div>
+<!-- !Main -->
+
+<!-- Scripts -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/chart.js"></script>
+<script type="text/javascript" src="js/popper.js"></script>
+<script type="text/javascript" src="js/tippy.js"></script>
+<script type="text/javascript" src="js/countto.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/select2.js"></script>
+<script type="text/javascript" src="js/flickity.js"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+<script type="text/javascript" src="js/init.js?ver=8"></script>
+<script>
+	$("#item_title").on("input", function() {
+		$("#item_title_show").text(this.value);
+	});
+	$("#CRYPTO_Price").on("input", function() {
+		$("#HKD_Price").val(Math.round((this.value*5.22)*100)/100);
+	});
+	$("#CRYPTO_Price").on("input", function() {
+		$("#price_show").text(this.value+" MATIC");
+	});
+	$("#HKD_Price").on("input", function() {
+		$("#CRYPTO_Price").val(Math.round(100*this.value/5.22)/100);
+	});
+	async function ConnectWallet(){
+		const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+		const account = accounts[0];
+		document.getElementById("wallet").innerHTML = account;
+	}
+	function readURL(input) {
+		if (input.files && input.files[0]) {
+			var reader = new FileReader();
+
+			reader.onload = function (e) {
+				$('#upload')
+					.attr('src', e.target.result);
+			};
+
+			reader.readAsDataURL(input.files[0]);
+		}
+	}
+</script>
+<!-- !Scripts -->
+
+</body>
+</html>
