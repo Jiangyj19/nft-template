@@ -1652,6 +1652,9 @@ a.anor_fn_like.liked .fn__svg{
 .anor_fn_gallery_1_1_2 .col2{
 	grid-column: span 2;
 }
+.anor_fn_gallery_1_1_2 .newcol2{
+	grid-column: span 4;
+}
 .anor_fn_gallery_1_1_2 .row2{
 	grid-row: span 2;
 }
