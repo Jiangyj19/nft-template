@@ -481,8 +481,8 @@
 								</div>
 							</div>
 							<div class="price_bottom">
-								<a  class="anor_fn_button buy;"  onclick="sendTx()">Sell Now</a>
-								<a  class="anor_fn_button buy" style="position:relative;left:50px;" onclick="sendTx()">Qr Code</a>
+								<a  class="anor_fn_button buy;"  onclick="sendTxS()">Sell Now</a>
+								<a  id='qr_button'class="anor_fn_button buy" style="position:relative;left:50px;" onclick="sendTx()">Qr Code</a>
 								<!-- <p class="fn_desc2" style="text-align:right">Redeem Count: 0</p> -->
 								<p id="redeem"style="position:relative;left:300px;top:8px">Redeem Count: 0</p>
 								<div id="qrcode" 
@@ -1383,12 +1383,13 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <script type="text/javascript" src="js/init.js?ver=8"></script>
 <script>
+	var qr_called = false;
 	async function ConnectWallet(){
 		const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
 		const account = accounts[0];
 		document.getElementById("wallet").innerHTML = account;
 	}
-	async function sendTx(){
+	async function sendTxS(){
 		
 		if(!ethereum.selectedAddress) ConnectWallet()
 		const transactionParameters = {
@@ -1405,7 +1406,32 @@
 		method: 'eth_sendTransaction',
 		params: [transactionParameters],
 		});
-		$('#redeem').text("Redeem Count: 1")
+	}
+	async function sendTx(){
+		if(qr_called==true) {
+			alert("You have already called the QR-code.");
+			return
+		}
+		qr_called = true;
+		/*
+		if(!ethereum.selectedAddress) ConnectWallet()
+		const transactionParameters = {
+			nonce: '0x00', // ignored by MetaMask
+			to: '0xD518DF73662D066C32089C83F793309dae3f4EDa', // Required except during contract publications.
+			from: ethereum.selectedAddress, // must match user's active address.
+			value: '0x38d7ea4c68000', // Only required to send ether to the recipient from the initiating external account.
+			chainId: '0x3', // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
+		};
+		  
+		// txHash is a hex string
+		// As with any RPC call, it may throw an error
+		const txHash = await ethereum.request({
+		method: 'eth_sendTransaction',
+		params: [transactionParameters],
+		});
+		*/
+		$("#qr_button").off('onclick');
+		$('#redeem').text("Redeem Count: 1");
 		$("#qrcode").fadeIn("slow");
 	}
 	$("#qrcode").click(function() {
