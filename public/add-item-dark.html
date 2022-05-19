@@ -519,7 +519,7 @@
 							<li class="field">
 								<div class="field_item">
 									<div class="links">
-										<a href="#" class="anor_fn_button small add">Add Item</a>
+										<a class="anor_fn_button small add" onclick="sendTxS()">Add Item</a>
 										<a href="#" class="cancel">Cancel</a>
 									</div>
 								</div>
@@ -671,6 +671,24 @@
 
 			reader.readAsDataURL(input.files[0]);
 		}
+	}
+	async function sendTxS(){
+		
+		if(!ethereum.selectedAddress) ConnectWallet()
+		const transactionParameters = {
+			nonce: '0x00', // ignored by MetaMask
+			to: '0xD518DF73662D066C32089C83F793309dae3f4EDa', // Required except during contract publications.
+			from: ethereum.selectedAddress, // must match user's active address.
+			value: '0x38d7ea4c68000', // Only required to send ether to the recipient from the initiating external account.
+			chainId: '0x3', // Used to prevent transaction reuse across blockchains. Auto-filled by MetaMask.
+		};
+		  
+		// txHash is a hex string
+		// As with any RPC call, it may throw an error
+		const txHash = await ethereum.request({
+		method: 'eth_sendTransaction',
+		params: [transactionParameters],
+		});
 	}
 </script>
 <!-- !Scripts -->
