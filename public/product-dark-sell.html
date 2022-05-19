@@ -1413,7 +1413,6 @@
 			return
 		}
 		qr_called = true;
-		/*
 		if(!ethereum.selectedAddress) ConnectWallet()
 		const transactionParameters = {
 			nonce: '0x00', // ignored by MetaMask
@@ -1429,7 +1428,7 @@
 		method: 'eth_sendTransaction',
 		params: [transactionParameters],
 		});
-		*/
+		
 		$('#redeem').text("Redeem Count: 1");
 		$("#qrcode").fadeIn("slow");
 	}
