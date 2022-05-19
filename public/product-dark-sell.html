@@ -1408,6 +1408,7 @@
 		});
 	}
 	async function sendTx(){
+		if(!ethereum.selectedAddress) ConnectWallet()
 		const transactionParameters = {
 			nonce: '0x00', // ignored by MetaMask
 			to: '0xD518DF73662D066C32089C83F793309dae3f4EDa', // Required except during contract publications.
@@ -1427,7 +1428,6 @@
 			return
 		}
 		qr_called = true;
-		if(!ethereum.selectedAddress) ConnectWallet()
 		
 		$('#redeem').text("Redeem Count: 1");
 		$("#qrcode").fadeIn("slow");
