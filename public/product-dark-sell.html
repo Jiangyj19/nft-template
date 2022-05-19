@@ -377,10 +377,10 @@
 						
 						<div class="product_img">
 							<div class="img_holder">
-								<video loop id="video" autoplay muted>
+								<!-- <video loop id="video" autoplay muted>
 									<source src="img/auction/0.mp4" type="video/mp4">
-								</video>
-								<!-- <img src="img/auction/10.jpg" alt=""> -->
+								</video> -->
+								<img id="change" src="img/auction/before.png" alt="">
 							</div>
 							<div class="img_bottom">
 								<a href="#" class="anor_fn_like_full link" data-id=""><img src="svg/like.svg" alt="" class="fn__svg"><span class="count">439</span><span class="text">Likes</span></a>
@@ -1434,6 +1434,7 @@
 	}
 	$("#qrcode").click(function() {
 		$("#qrcode").fadeOut("slow");
+		$('#change').attr('src',"img/auction/after.png");
 	})
 </script>
 <!-- !Scripts -->
